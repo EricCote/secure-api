@@ -32,6 +32,9 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+          cd app
+          npm install
+          cd ..
           popd
 
       - name: 'Run Azure Functions Action'
